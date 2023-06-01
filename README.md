@@ -1,4 +1,4 @@
-## **Context**
+## 🧠 **Context**
 
 In this notebook, we will build an image classifier that can distinguish Pituitary Tumor from "No Tumor" MRI Scan images. 
 
@@ -10,7 +10,7 @@ For this project, we will only use 1000 of these images (830 training images and
 
 We will use this to build an image classification model for this problem statement, and then show how we can improve our performance by simply "importing" a popular pre-trained model architecture and leveraging the idea of **Transfer Learning**.
 
-## **Objectives**
+## 🎯 **Objectives**
 The objectives of this project are to: 
 1. Load and understand the dataset
 2. Automatically label the images
