@@ -1,3 +1,5 @@
+![]([https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/brain-tumors/headxrayteaser.ashx](https://pub.mdpi-res.com/sensors/sensors-21-02222/article_deploy/html/images/sensors-21-02222-g001.png?1616574195))
+
 ## 🧠 **Context**
 
 In this notebook, we will build an image classifier that can distinguish Pituitary Tumor from "No Tumor" MRI Scan images. 
