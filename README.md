@@ -1,22 +1,61 @@
-# 🧠 Brain Tumor Image Classifier
+# 🧠 Brain Tumor Image Classifier 🏥
 
-## 📝 **Context**
+This project is about building a Brain Tumor Image Classifier using Convolutional Neural Networks (CNNs) and Transfer Learning.
 
-In this notebook, we will build an image classifier that can distinguish Pituitary Tumor from "No Tumor" MRI Scan images. 
+## 📝 Project Overview
 
-The dataset used in this notebook is available for download from [Kaggle](https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri). 
+The project uses a dataset of brain images stored in a structured folder. The images are extracted in an auto-labelled fashion using Keras' `flow_from_directory`. The images are of different sizes, which is a problem for CNNs as they expect all images to have the same size. Therefore, the images are cropped from the center to ensure they all have the same size. Data Augmentation is used to generate more training data.
 
-Although this dataset actually has a total of 3,264 images belonging to 4 classes - Glioma Tumor, Meningioma Tumor, Pituitary Tumor and No Tumor, for this project we have only taken two classes, and **we are building a binary classification model to classify between the Pituitary Tumor category vs No Tumor.**
+## 🚀 Setup
 
-For this project, we will only use 1000 of these images (830 training images and 170 Testing images). For the training dataset, we will take 395 MRI scans of No Tumor and 435 MRI scans of Pituitary Tumor. In our problem, we will also be using Data Augmentation to prevent overfitting, and to make our model model more generalised and robust.
+### Requirements
 
-We will use this to build an image classification model for this problem statement, and then show how we can improve our performance by simply "importing" a popular pre-trained model architecture and leveraging the idea of **Transfer Learning**.
+- Python 3.6 or above 🐍
+- TensorFlow 2.0 or above 🧠
+- Keras 🧪
+- Matplotlib 📊
+- Numpy 🧮
 
-## 🎯 **Objectives**
-The objectives of this project are to: 
-1. Load and understand the dataset
-2. Automatically label the images
-3. Perform Data Augmentation
-4. Build a classification model for this problem using CNNs
-5. Improve the model's performance through Transfer Learning
+### Installation
 
+1. Clone the repository:
+
+```bash
+git clone https://github.com/LVH-Tony/braintumor-identification.git
+cd braintumor-identification
+```
+
+2. Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🛠️ Usage
+
+1. Prepare your dataset by placing your images in a structured folder. The images should be auto-labelled and extracted using Keras' `flow_from_directory`.
+
+2. Run the script:
+
+```bash
+python brain_tumor_classifier.py
+```
+
+## 🤖 Models
+
+Two models are used in this project:
+
+1. A custom Convolutional Neural Network (CNN) model.
+2. A model built using Transfer Learning with VGG16.
+
+## 📈 Results
+
+The custom CNN model achieved a training accuracy of ~95% and a testing accuracy of ~72%. The Transfer Learning model achieved a training accuracy of ~98% and a validation accuracy of ~91%.
+
+## 👥 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📜 License
+
+[MIT](https://choosealicense.com/licenses/mit/)
